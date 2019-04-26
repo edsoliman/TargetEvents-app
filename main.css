@@ -1,0 +1,244 @@
+/*page background elements*/
+html {
+  background: url(assets/event3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: rgba(255, 255, 255, .8);
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+/*containers*/
+.main-container-parent {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.header-container {
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header-container-fixed {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  transition: 2s;
+}
+
+.app-logo {
+  width: fit-content;
+  position: relative;
+  top: calc(50vh - 37.5px);
+  left: calc(50vw - 75px);
+  transition: 2s;
+}
+
+.app-logo.animate-left {
+  top: 0;
+  left: 0;
+}
+
+.search-container {
+  display: none;
+  width: fit-content;
+  height: 35px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  letter-spacing: .03em;
+}
+
+.metadata-container {
+  width: 40%;
+  margin-top: 60px;
+  margin-right: 20px;
+  vertical-align: top;
+  float: right;
+}
+
+.result-container {
+  display: block;
+  width: 75%;
+  height: 125px;
+  margin: 10px auto 10px auto;
+  border-bottom: 3px solid gray;
+  font-size: 18px;
+  overflow: scroll;
+  font-family: 'Homenaje', sans-serif;
+  font-weight: normal;
+  letter-spacing: .05em;
+  font-size: 20px;
+  transition: .3s;
+}
+
+.result-container:hover {
+  border-left: 2px solid orangered;
+  padding-left: 10px;
+}
+
+.result-container a {
+  cursor: pointer;
+}
+
+/*response results*/
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.event-city {
+  float: right;
+  font-weight: bold;
+}
+
+.search-results {
+  margin-top: 170px;
+}
+
+/*buttons*/
+.logo-button {
+  font-size: 42px;
+  background: rgba(255, 70, 3, .8);
+  padding: 10px;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  letter-spacing: .05em;
+  margin: 10px;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.see-results {
+  padding: 3px;
+  border-radius: 5px;
+  background: rgb(37, 187, 179);
+  border: none;
+  font-size: 16px;
+  font-family: 'Teko', sans-serif;
+  margin-bottom: 5px;
+}
+
+.logo-button:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*form*/
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 2px;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+  vertical-align: bottom;
+  margin-right: 25px;
+  margin-bottom: 3px;
+  letter-spacing: .05em;
+}
+
+label {
+  vertical-align: bottom;
+  margin-right: 5px; 
+}
+
+input:last-of-type {
+  margin-right: 0px;
+} 
+
+/*responsiveness*/
+@media only screen and (min-width: 350px) {
+  .header-container-fixed {
+    position: relative;
+  }
+
+  label, input {
+    display: block;
+  }
+
+  .header-container-fixed {
+    height: 350px;
+  }
+
+  .results-container {
+    position: relative;
+    top: -140px;
+  }
+
+  .app-logo.animate-left {
+    display: block;
+  }
+
+  .search-container {
+  display: block;
+  display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .app-logo.animate-left {
+    display: inline-block;
+  }
+
+  .header-container-fixed {
+    position: fixed;
+  }
+
+  .search-container {
+    display: inline-block;
+    display: none;
+    float: right;
+    z-index: 0;
+  }
+
+  .results-container {
+    margin-top: 410px;
+  }
+
+  .header-container-fixed {
+    height: 250px;
+    z-index: 9;
+  }
+}
+
+@media only screen and (min-width: 1215px) {
+  .search-container {
+    display: inline-block;
+    display: none;
+  }
+
+  .results-container {
+    margin-top: 250px;
+  }
+
+  .header-container-fixed {
+    height: 100px;
+  }
+
+  label, input {
+    display: inline-block; 
+  }
+
+  form {
+    margin-top: 55px;
+    margin-right: 10px;
+  }
+}
+

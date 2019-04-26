@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Target Events</title>
+      <link href="main.css" rel="stylesheet" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css?family=Six+Caps|Homenaje|Teko" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+      <main>
+        <div role="main content" class="main-container-parent">
+          <div role="header" id="header_container" class="header-container">
+            <div role="app logo" id="app_logo" class="app-logo">
+                <a href="/index.html"><button type="button" class="logo-button">TargetEvents</button></a>
+            </div>
+
+            <div role="search" class="search-container">
+              <form method='GET' action="" id="see_results_form" autocomplete="off">
+                <span role="search questions">
+                    <label for="keyword_search">What type of events are you interested in?</label>
+                    <input id="keyword_search" type="text" placeholder="" required></input>
+                    <label for="location_search">Where?</label>
+                    <input id="location_search" type="text" placeholder="" required></input>
+                    <label for="date_search">What date?</label>
+                    <input id="date_search" type="text" placeholder="" required></input>
+                    <button class="see-results" id="see_results" type="submit">See Results</button>
+                </span>
+              </form>
+            </div>
+          </div>
+
+            <div role="search results" class="results-container">
+              <div class="search-results" id="search_results" role="search results">
+              </div>
+            </div>
+        </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </body>
+  </html>
