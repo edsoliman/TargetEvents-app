@@ -19,7 +19,7 @@
 
             <div role="search" class="search-container">
               <form method='GET' action="" id="see_results_form" autocomplete="off">
-                <span role="search questions">
+                <span role="search questions" aria-live="polite">
                     <label for="keyword_search">What type of events are you interested in?</label>
                     <input id="keyword_search" type="text" placeholder="" required></input>
                     <label for="location_search">Where?</label>
@@ -33,7 +33,7 @@
           </div>
 
             <div role="search results" class="results-container">
-              <div class="search-results" id="search_results" role="search results">
+              <div class="search-results" id="search_results" role="search results" aria-live="polite">
               </div>
             </div>
         </div>
