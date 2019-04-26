@@ -1,6 +1,6 @@
 # TargetEvents-app
 
-A link to your live app
+Here's a link to the live app: https://esoliman0325.github.io/TargetEvents-app/
 
 ![Alt text](https://github.com/esoliman0325/TargetEvents-app/blob/master/assets/TargetEventLiveShot.png)
 
