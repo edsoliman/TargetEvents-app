@@ -1,4 +1,4 @@
-const baseEventSearchURL = "http://api.eventful.com/json/events/search";
+const baseEventSearchURL = "https://api.eventful.com/json/events/search";
 
 function getQueryString(params) {
   let queryString = Object.keys(params)
