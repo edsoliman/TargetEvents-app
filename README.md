@@ -1,6 +1,5 @@
 # TargetEvents-app
 
-The name of your app at the top of the file
 A link to your live app
 
 ![Alt text](https://github.com/esoliman0325/TargetEvents-app/blob/master/assets/TargetEventLiveShot.png)
